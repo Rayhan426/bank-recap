@@ -16,7 +16,7 @@ const previousTotalBalanceString = totalBalance.innerText;
 const previousTotalBalance = parseFloat(previousTotalBalanceString);
 
 if (newWithdrawField > previousTotalBalance) {
-    alert('You do not have more money');
+    alert('bank deulia korar cinta korben na');
     return;
 }
 const currentWithdrawBalance = previousWithdrawTotal + newWithdrawField;
