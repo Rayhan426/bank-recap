@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cash Counter</title>
+</head>
+
+<body class="bg-blend-darken"
+    style="background: rgba(20, 19, 24, 0.7)url(./banking-01.avif); background-repeat: no-repeat; background-size: cover;">
+    <header class="lg:w-3/6 mx-auto w-11/12 py-4 border-solid border-2 flex justify-center items-center  mt-4">
+        <h1 class="lg:text-5xl text-4xl text-center text-white font-medium lg:p-8 "> Here You Can Deposit <span
+                class="font-semibold text-rose-500">Your Money!!</span> </h1>
+    </header>
+
+    <main>
+        <!--  -->
+        <section class="my-20">
+            <div class="grid lg:grid-cols-3 lg:gap-5 gap-3 lg:w-9/12 w-11/12  mx-auto">
+                <div class="bg-green-600 p-8 rounded pb-8">
+                    <h4 class="text-white font-medium text-4xl">Deposit</h4>
+                    <h3 class="text-white font-medium text-5xl">$<span id="deposit-total">00</span></h3>
+                </div>
+                <div class="bg-sky-600 p-8 rounded pb-8">
+                    <h4 class="text-white font-medium text-4xl">Withdraw</h4>
+                    <h3 class="text-white font-medium text-5xl">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-violet-600 p-8 rounded pb-8">
+                    <h4 class="text-white font-medium text-4xl">Balance</h4>
+                    <h3 class="text-white font-medium text-5xl">$<span id="total-balance">1240</span></h3>
+                </div>
+            </div>
+        </section>
+        <!-- -----------------------------deposit field and button heere--------------------------------- -->
+        <section class="my-20">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-5 gap-3 lg:w-9/12 w-11/12 mx-auto text-center">
+                <div class="bg-yellow-500 p-8 rounded pb-8">
+                    <h4 class="text-white font-medium text-4xl mb-4">Deposit</h4>
+                    <input class="mb-2 p-2 block  lg:w-2/4 mx-auto rounded" id="diposit-field" type="text"
+                        placeholder="$ Deposit Your Money">
+                    <button id="deposit-btn"
+                        class="text-white font-bold  bg-sky-400 hover:bg-sky-700 text-center px-5 rounded-lg py-2">Deposit</button>
+                </div>
+                <!-----------------------  withdraw field ---------------->
+                <div class="bg-rose-500 p-8 rounded pb-8">
+                    <h4 class="text-white font-medium text-4xl mb-4">Withdraw</h4>
+                    <input class="mb-2 p-2 block  lg:w-2/4 mx-auto rounded" id="withdraw-field" type="text"
+                        placeholder="$ Withdraw Your Money">
+                    <button id="withdraw-btn"
+                        class="text-white font-bold  bg-orange-400 hover:bg-orange-600 text-center px-5 rounded-lg py-2">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer part ---------------------- -->
+    <footer class="bg-gradient-to-r from-violet-900 to-blue-700 h-60 pt-6">
+        <div class="  text-white  mt-16">
+            <h4 class="text-center ">All rights reserved by Bangladesh-Bank</h4>
+            <p class="text-center ">Rangpur Branch -5420</p>
+        </div>
+    </footer>
+    <!-- ---------------------------------------- -->
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+
+</html>
